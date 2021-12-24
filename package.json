@@ -1,13 +1,12 @@
 {
   "name": "@clone-yangson/fr-generator-hyx",
-  "version": "2.7.7",
+  "version": "2.7.8",
   "repository": {
     "type": "git",
     "url": "git@github.com:YangsonHung/fr-generator-hyx.git"
   },
   "scripts": {
-    "build": "father-build",
-    "publish": "npm publish --access public"
+    "build": "father-build"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

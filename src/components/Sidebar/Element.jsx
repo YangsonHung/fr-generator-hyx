@@ -48,7 +48,7 @@ const Element = ({ text, name, schema, icon, fixedName }) => {
   };
 
   return (
-    <div ref={dragRef}>
+    <div className='left-item-draggable-wrapper' ref={dragRef}>
       <WidgetUI text={text} icon={icon} onClick={handleElementClick} />
     </div>
   );
