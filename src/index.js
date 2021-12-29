@@ -24,6 +24,7 @@ Generator.Sidebar = Sidebar;
 Generator.Canvas = Canvas;
 Generator.Settings = Settings;
 
+export * from './utils'
 export {
   defaultSettings,
   defaultCommonSettings,
