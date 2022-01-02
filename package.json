@@ -1,13 +1,27 @@
 {
   "name": "@clone-yangson/fr-generator-hyx",
-  "version": "2.7.9",
+  "version": "2.7.11",
   "repository": {
     "type": "git",
     "url": "git@github.com:YangsonHung/fr-generator-hyx.git"
   },
   "scripts": {
-    "build": "father-build"
+    "start": "dumi dev",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "build": "father-build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "prepublishOnly": "npm run build"
   },
+  "files": [
+    "dist",
+    "lib",
+    "CHANGELOG.md",
+    "README.md"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
@@ -38,11 +52,23 @@
     "react-sortable-hoc": "^2.0.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.3",
+    "@umijs/fabric": "^2.8.1",
+    "@umijs/test": "^3.0.5",
     "antd": "4.x",
     "form-render": "1.x",
     "babel-plugin-import": "^1.13.3",
     "father-build": "^1.17.2",
     "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-copy": "^3.4.0"
+    "rollup-plugin-copy": "^3.4.0",
+    "dumi": "^1.1.0",
+    "gh-pages": "^3.0.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.1",
+    "yorkie": "^2.0.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   }
 }
