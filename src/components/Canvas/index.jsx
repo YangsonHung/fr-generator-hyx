@@ -90,7 +90,7 @@ const Canvas = ({ onSelect }) => {
         return defaultText;
     };
 
-    const toogleViewState = () => {
+    const toggleViewState = () => {
         setState({ preview: !preview });
         setGlobal({ selected: '#' });
     };
@@ -98,13 +98,13 @@ const Canvas = ({ onSelect }) => {
     // 对外暴露清空方法
     imperativeHandle.clearSchema = clearSchema;
     // 对外暴露切换视图状态方法
-    imperativeHandle.toogleViewState = toogleViewState;
+    imperativeHandle.toggleViewState = toggleViewState;
 
     return (
         <div className="mid-layout pr2">
             <div className="mv2 mh1">
                 {_showDefaultBtns[0] !== false && (
-                    <Button className="mr2 mb1" onClick={toogleViewState}>
+                    <Button className="mr2 mb1" onClick={toggleViewState}>
                         {getDefaultBtnText(
                             _showDefaultBtns[0],
                             ['开始编辑', '最终展示'],
