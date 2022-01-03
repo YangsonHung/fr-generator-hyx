@@ -24,8 +24,12 @@ const Sidebar = (props) => {
                     return (
                         <div key={idx}>
                             <p className="f6 b" onClick={() => onClickTitle(idx)}>
-                                <span>{item.title}</span>
-                                <UpOutlined className="right-action" />
+                                <span className="item-title">{item.title}</span>
+                                {!hidden[idx] ? (
+                                    <UpOutlined className="right-action" />
+                                ) : (
+                                    <DownOutlined className="right-action" />
+                                )}
                             </p>
                             {!hidden[idx] && (
                                 <ul className="pl0">
