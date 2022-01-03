@@ -1,12 +1,35 @@
-.fr-generator-container .left-layout {
-    flex-shrink: 0;
-    padding: 16px 0 0 8px;
-    overflow-y: auto;
-    height: 100%;
-}
+.fr-generator-container {
+    .left-layout {
+        flex-shrink: 0;
+        height: 100%;
+        padding: 0;
+        overflow-y: auto;
 
-.fr-generator-container .left-layout ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+        .f6.b {
+            position: relative;
+            height: 44px;
+            padding-left: 20px;
+            color: #323538;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 44px;
+            background-color: #f7f8f9;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .right-action {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            padding-left: 8px;
+        }
+    }
 }
