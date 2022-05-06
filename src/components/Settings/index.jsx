@@ -52,7 +52,7 @@ export default function Settings({ widgets }) {
             <ToggleIcon />
             <Tabs activeKey={tabsKey} onChange={(key) => setState({ tabsKey: key })}>
                 {showItemSettings && (
-                    <TabPane tab={<span>组件配置1</span>} key="itemSettings">
+                    <TabPane tab={<span>组件配置</span>} key="itemSettings">
                         <ItemSettings widgets={widgets} />
                     </TabPane>
                 )}
