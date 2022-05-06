@@ -1,9 +1,17 @@
 .fr-generator-container {
     .left-layout {
+        display: flex;
+        flex-direction: column;
         flex-shrink: 0;
         height: 100%;
         padding: 0;
+        padding-top: 30px;
         overflow-y: auto;
+
+        .left-menu-icon {
+            color: #434343;
+            font-size: 16px;
+        }
 
         .f6.b {
             position: relative;
@@ -34,6 +42,13 @@
             flex-wrap: wrap;
             align-content: flex-start;
             padding-left: 8px;
+        }
+    }
+
+    .head-left-arrow {
+        .left-menu-icon {
+            color: #434343;
+            font-size: 16px;
         }
     }
 }
