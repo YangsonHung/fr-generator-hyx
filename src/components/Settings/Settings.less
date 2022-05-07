@@ -1,0 +1,39 @@
+.fr-generator-container {
+    .right-layout {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        width: 8rem;
+        height: 100%;
+        padding-top: 24px;
+        .toggleIcon {
+            width: 30px;
+            height: 30px;
+            padding: 8px 0px 0px 8px;
+            .right-menu-icon {
+                color: #434343;
+                font-size: 16px;
+            }
+        }
+    }
+    .head-right-arrow {
+        width: 40px;
+        transform: rotate(180deg);
+        .toggleIcon {
+            width: 30px;
+            height: 30px;
+            padding: 0 8px 8px 0;
+            text-align: right;
+            .right-menu-icon {
+                color: #434343;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .fr-generator-container .right-layout {
+        width: 16rem;
+    }
+}
