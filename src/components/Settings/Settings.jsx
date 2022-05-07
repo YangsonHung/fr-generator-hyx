@@ -14,7 +14,7 @@ const Settings = ({ widgets }) => {
         showRight: true,
         showItemSettings: false,
     });
-    const { selected } = useStore();
+    const { selected, imperativeHandle } = useStore();
     const { tabsKey, showRight, showItemSettings } = state;
     const toggleRight = () => setState({ showRight: !showRight });
     const ToggleIcon = () => (
@@ -35,6 +35,8 @@ const Settings = ({ widgets }) => {
             setState({ tabsKey: 'itemSettings', showItemSettings: true });
         }
     }, [selected]);
+
+    imperativeHandle.toggleRight = (v) => setState({ showRight: v });
 
     if (showRight) {
         return (

@@ -8,7 +8,7 @@ import { DownOutlined, UpOutlined, MenuFoldOutlined } from '@ant-design/icons';
 const Sidebar = (props) => {
     const [hidden, setHidden] = useState({});
     const [showLeft, setShowLeft] = useState(true);
-    const { userProps = {} } = useStore();
+    const { userProps = {}, imperativeHandle } = useStore();
     const { settings } = userProps;
     const _settings = Array.isArray(settings) ? settings : defaultSettings;
     const onClickTitle = (idx) => {
@@ -25,6 +25,8 @@ const Sidebar = (props) => {
             <ToggleIcon />
         </div>
     );
+
+    imperativeHandle.toggleLeft = (v) => setShowLeft(v);
 
     if (showLeft) {
         return (
