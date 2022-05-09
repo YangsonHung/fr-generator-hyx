@@ -45,6 +45,7 @@ function Provider(props, ref) {
         children,
         fieldRender,
         fieldWrapperRender,
+        validateMessages,
     } = props;
 
     const transformer = {
@@ -113,6 +114,7 @@ function Provider(props, ref) {
         settings,
         commonSettings,
         globalSettings,
+        validateMessages,
     };
 
     let _schema = {};

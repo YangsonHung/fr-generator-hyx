@@ -129,6 +129,7 @@ export default function ItemSettings({ widgets }) {
             <FormRender
                 form={form}
                 schema={settingSchema}
+                validateMessages={userProps.validateMessages}
                 widgets={{ ..._widgets, ...widgets }}
                 watch={{
                     '#': (v) => setTimeout(() => onDataChange(v), 0),
