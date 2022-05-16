@@ -1322,6 +1322,21 @@
   resolved "https://registry.npmmirror.com/@bloomberg/record-tuple-polyfill/download/@bloomberg/record-tuple-polyfill-0.0.3.tgz?cache=0&sync_timestamp=1635502809912&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40bloomberg%2Frecord-tuple-polyfill%2Fdownload%2F%40bloomberg%2Frecord-tuple-polyfill-0.0.3.tgz#0b03d18b88a30894caab14abd669b1cbbf47b843"
   integrity sha1-CwPRi4ijCJTKqxSr1mmxy79HuEM=
 
+"@clone-yangson/form-render-next@^1.9.12":
+  version "1.9.12"
+  resolved "https://registry.npmjs.org/@clone-yangson/form-render-next/-/form-render-next-1.9.12.tgz#136f8f5e3e6f20568bc242a32800648c9bde1e1c"
+  integrity sha512-kfKJzhGg1wIDdZ8q0j5ebQETndZTvST+dayoWHD/0i0Zjs5pT2Nvt9bpVb1rvwALtl6+ReRknjL/pjg1u6mSWQ==
+  dependencies:
+    "@ant-design/icons" "^4.0.2"
+    async-validator "^3.5.1"
+    color "^3.1.2"
+    lodash-es "^4.17.21"
+    moment "^2.24.0"
+    nanoid "^3.1.20"
+    rc-color-picker "^1.2.6"
+    react "^16.12.0 || ^17.0.0"
+    virtualizedtableforantd4 "^1.1.2"
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.npmmirror.com/@cnakazawa/watch/download/@cnakazawa/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -3219,8 +3234,8 @@ async-limiter@~1.0.0:
 
 async-validator@^3.5.1:
   version "3.5.2"
-  resolved "https://registry.npmmirror.com/async-validator/download/async-validator-3.5.2.tgz?cache=0&sync_timestamp=1634529532378&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fasync-validator%2Fdownload%2Fasync-validator-3.5.2.tgz#68e866a96824e8b2694ff7a831c1a25c44d5e500"
-  integrity sha1-aOhmqWgk6LJpT/eoMcGiXETV5QA=
+  resolved "https://registry.npmjs.org/async-validator/-/async-validator-3.5.2.tgz#68e866a96824e8b2694ff7a831c1a25c44d5e500"
+  integrity sha512-8eLCg00W9pIRZSB781UUX/H6Oskmm8xloZfr09lz5bikRpBVDlJ3hRVuxxP1SxcwsEYfJ4IU8Q19Y8/893r3rQ==
 
 async-validator@^4.0.2:
   version "4.0.7"
@@ -5847,20 +5862,6 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-form-render@1.x:
-  version "1.8.5"
-  resolved "https://registry.npmmirror.com/form-render/download/form-render-1.8.5.tgz#52c300a847075eefd664f1340d7c2412d6412ecb"
-  integrity sha512-r5wLc9Vq/oNhftgSnfQrlvnNG/NwdmD3bDYrnZzyNI5JV203gu64JMdsNe/97aLH5IKNT8qxoD9tN/8gACQwbw==
-  dependencies:
-    "@ant-design/icons" "^4.0.2"
-    async-validator "^3.5.1"
-    color "^3.1.2"
-    lodash-es "^4.17.21"
-    moment "^2.24.0"
-    nanoid "^3.1.20"
-    rc-color-picker "^1.2.6"
-    virtualizedtableforantd4 "^1.1.2"
-
 format@^0.2.0:
   version "0.2.2"
   resolved "https://registry.npmmirror.com/format/download/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
@@ -8303,7 +8304,7 @@ locate-path@^5.0.0:
 
 lodash-es@^4.17.21:
   version "4.17.21"
-  resolved "https://registry.npmmirror.com/lodash-es/download/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  resolved "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
 lodash.camelcase@^4.3.0:
@@ -8980,7 +8981,12 @@ nan@^2.12.1:
   resolved "https://registry.npmmirror.com/nan/download/nan-2.15.0.tgz#3f34a473ff18e15c1b5626b62903b5ad6e665fee"
   integrity sha1-PzSkc/8Y4VwbVia2KQO1rW5mX+4=
 
-nanoid@^3.1.20, nanoid@^3.1.22, nanoid@^3.1.30:
+nanoid@^3.1.20:
+  version "3.3.4"
+  resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
+  integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
+
+nanoid@^3.1.22, nanoid@^3.1.30:
   version "3.1.30"
   resolved "https://registry.npmmirror.com/nanoid/download/nanoid-3.1.30.tgz#63f93cc548d2a113dc5dfbc63bfa09e2b9b64362"
   integrity sha512-zJpuPDwOv8D2zq2WRoMe1HsfZthVewpel9CAvTfc/2mBD1uUT/agc5f7GHGWXlYkFvi1mVxe4IjvP2HNrop7nQ==
@@ -11262,6 +11268,14 @@ react@16.x, react@^16.14.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
+
+"react@^16.12.0 || ^17.0.0":
+  version "17.0.2"
+  resolved "https://registry.npmjs.org/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
+  integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 read-pkg-up@^4.0.0:
   version "4.0.0"
@@ -13652,9 +13666,9 @@ vinyl@^2.0.0, vinyl@^2.1.0:
     replace-ext "^1.0.0"
 
 virtualizedtableforantd4@^1.1.2:
-  version "1.1.4"
-  resolved "https://registry.npmmirror.com/virtualizedtableforantd4/download/virtualizedtableforantd4-1.1.4.tgz#1990cda8d82225d53054d7ff544faf4fee7dd3c7"
-  integrity sha1-GZDNqNgiJdUwVNf/VE+vT+5908c=
+  version "1.1.6"
+  resolved "https://registry.npmjs.org/virtualizedtableforantd4/-/virtualizedtableforantd4-1.1.6.tgz#3383ab04790d6841bd622deaa2e5ffc05c798b5d"
+  integrity sha512-6PgwsxBZl8qFkH71tXHbYT4gb5muyQpKKFlJTGTtx/pFduPlb1dzDsDgXFZs0YBPkOul2RkmD25CpzZGJWBxuw==
 
 vm-browserify@^1.0.1:
   version "1.1.2"

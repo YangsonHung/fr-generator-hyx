@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import FormRender, { useForm } from 'form-render';
+import FormRender, { useForm } from '@clone-yangson/form-render-next';
 import { defaultGlobalSettings } from '../../settings';
 import { useStore, useGlobal } from '../../utils/hooks';
 

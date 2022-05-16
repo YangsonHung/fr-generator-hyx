@@ -3,7 +3,10 @@ import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/lib/locale/zh_CN';
-import { widgets as defaultWidgets, mapping as defaultMapping } from 'form-render';
+import {
+    widgets as defaultWidgets,
+    mapping as defaultMapping,
+} from '@clone-yangson/form-render-next';
 import copyTOClipboard from 'copy-text-to-clipboard';
 import {
     flattenSchema,

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import FormRender, { useForm } from 'form-render';
+import FormRender, { useForm } from '@clone-yangson/form-render-next';
 import { flattenToData, dataToFlatten } from '../../../utils';
 import { useStore } from '../../../utils/hooks';
 import RenderChildren from './RenderChildren';
